@@ -10,4 +10,4 @@ dependencies:
 
 test:
   pre:
-    - pep8
+    - pep8 *.py
