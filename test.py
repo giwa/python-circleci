@@ -10,9 +10,15 @@ def test():
     >> test()
     foo
     """
+
     return 'foo'
+
+def _test():
+    import doctest
+    (failure_count, test_count) = doctest.testmod(optionflags=doctest.ELLIPSIS)
+    if failure_count:
+        exit(-1)
 
 
 if __name__ == '__main__':
-    import doctest
-    doctest.testmod()
+    _test()

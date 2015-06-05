@@ -4,10 +4,8 @@ machine:
   python:
     version: 3.4.2
 
-dependencies:
-  pre:
-      - pip install requests
-
 test:
   pre:
-    - pep8 *.py
+    - ./tests/run-lint
+  overide:
+    - ./tests/run-test
