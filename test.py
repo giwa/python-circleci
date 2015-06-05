@@ -7,8 +7,8 @@ if sys.version_info[0] < 3:
 
 def test():
     """ Print foo
-    >> test()
-    foo
+    >>> test()
+    'foo'
     """
     return 'foo'
 
