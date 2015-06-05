@@ -7,5 +7,5 @@ machine:
 test:
   pre:
     - ./tests/run-lint
-  overide:
+  override:
     - ./tests/run-test
