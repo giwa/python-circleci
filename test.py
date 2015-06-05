@@ -10,8 +10,8 @@ def test():
     >> test()
     foo
     """
-
     return 'foo'
+
 
 def _test():
     import doctest
