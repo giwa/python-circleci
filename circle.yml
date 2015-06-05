@@ -1,0 +1,13 @@
+machine:
+  timezone:
+    Asia/Tokyo
+  python:
+    version: 3.4.2
+
+dependencies:
+  pre:
+      - pip install requests
+
+test:
+  pre:
+    - pep8
